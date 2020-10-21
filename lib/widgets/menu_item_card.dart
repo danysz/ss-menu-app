@@ -92,7 +92,7 @@ class MenuItemCard extends StatelessWidget {
                         ),
                       );
                     } else {
-                      var appState = Provider.of<AppState>(context);
+                      var appState = Provider.of<AppState>(context, listen: false);
                       appState.addItemToCart(OrderItem(
                         name: '${this.item.name} ${this.item.category}',
                         category: this.item.category,

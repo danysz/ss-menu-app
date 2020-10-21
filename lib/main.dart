@@ -25,7 +25,7 @@ class _SSMenuAppState extends State<SSMenuApp> {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      builder: (context) => this.appState,
+      create: (context) => this.appState,
       child: MaterialApp(
         theme: ThemeData(fontFamily: 'Poppins'),
         routes: {
